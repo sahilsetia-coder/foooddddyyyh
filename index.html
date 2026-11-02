@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FreshCheck AI — Food Spoilage Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="logo">✳</span> FreshCheck <b>AI</b></a><nav><a href="#samples">Samples</a><a href="#how">How it works</a><a href="#safety">Food safety</a></nav><span class="badge">● Offline demo</span></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">SMART FOOD • SAFER CHOICES</p><h1>Know what’s fresh.<br><em>Skip what’s spoiled.</em></h1><p class="lead">A visual food-spoilage demo that explains visible signs, likely causes, possible health concerns, and the safest next step.</p><div class="hero-actions"><a class="button primary" href="#samples">Explore sample scans ↗</a><a class="button secondary" href="#how">How it works</a></div><div class="hero-stats"><div><strong>5</strong><span>curated samples</span></div><div><strong>0</strong><span>external API calls</span></div><div><strong>100%</strong><span>offline demo</span></div></div></div>
+<div class="hero-card"><div class="scan-line"></div><img src="assets/strawberry-mold.jpg" alt="Mold on strawberries"><div class="scan-label"><span class="dot red"></span><div><b>Visible spoilage detected</b><small>Example result • Strawberry</small></div><span class="pill danger">Discard</span></div></div></section>
+<section class="section" id="samples"><div class="section-head"><div><p class="eyebrow">DEMO LIBRARY</p><h2>Choose a sample to inspect</h2></div><p>These results are predefined for the supplied images—not an AI diagnosis of a new camera photo.</p></div>
+<div class="sample-grid" id="sampleGrid"></div>
+<div class="result-panel" id="resultPanel"><div class="result-empty"><span>✳</span><h3>Your food report appears here</h3><p>Select one of the sample cards above to view its spoilage report.</p></div></div>
+</section>
+<section class="section split" id="how"><div><p class="eyebrow">HOW IT WORKS</p><h2>A clear, explainable demo</h2><p class="muted">This prototype uses a local image library and matching information. It needs no API key, server, or internet connection once the files are saved.</p><div class="steps"><div><span>01</span><div><b>Select a sample</b><p>Choose one of the five supplied food images.</p></div></div><div><span>02</span><div><b>Review visual signs</b><p>See the likely spoilage category and confidence in the sample label.</p></div></div><div><span>03</span><div><b>Use the safety guidance</b><p>Read the cautious handling advice and what to do next.</p></div></div></div></div>
+<div class="upload-card"><div class="upload-icon">＋</div><h3>Try your own photo</h3><p>Upload or capture an image to preview it. This offline version cannot reliably classify arbitrary photos; choose a sample above for a predefined report.</p><label class="button primary upload-btn">Upload / use camera<input id="photoInput" type="file" accept="image/*" capture="environment" hidden></label><div id="previewWrap" class="preview-wrap" hidden><img id="preview" alt="Your uploaded food preview"><span>Preview only — no automatic detection</span></div></div></section>
+<section class="safety section" id="safety"><div class="safety-icon">!</div><div><p class="eyebrow">IMPORTANT FOOD-SAFETY NOTE</p><h2>Don’t taste food to test it.</h2><p>Visible mold can indicate spoilage, but harmful microbes may be present without visible signs. For soft, moist foods (such as berries and bread), discard the affected food rather than cutting around mold. A visual image cannot establish that food is safe to eat.</p></div></section>
+</main><footer><span>FreshCheck AI · Food Spoilage Detection Prototype</span><span>Educational demo · Not a medical or laboratory test</span></footer>
+<script src="script.js"></script>
+</body></html>
